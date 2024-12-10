@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.containermain {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  border: 5px solid #fff;
+  padding: 15px;
+  position: relative;
+  margin: 80px 144px 10px 150px;
+  box-shadow: 0 0 12px rgba(41, 42, 51, 0.06), 0 6px 20px rgba(41, 42, 51, 0.02);
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #828bb3;
+  padding: 8px;
+}
+.filter-section select,
+.filter-section input[type="text"] {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 11%;
+}
+.filter-section input[type="text"] {
+  width: 15%;
+}
+.filter-section input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Cards Section */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+main {
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .containermain {
+    margin: 50px auto;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    border: 5px solid #fff;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 12px rgba(41, 42, 51, 0.06),
+      0 6px 20px rgba(41, 42, 51, 0.02);
+  }
+
+  .filter-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .filter-section select {
+    width: 100%;
+  }
+  .filter-section input {
+    width: 100% !important;
+  }
+  .bottomsec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomsec select {
+    display: none;
+  }
+  .filter_search {
+    background-color: blue;
+    width: 100%;
+  }
+  .filter_search.icon {
+    text-align: end;
+  }
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--main-color);
+  transition: background 0.3s;
+}
+.card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px auto 10px;
+  display: block;
+  border: 3px solid #fff;
+}
+.card h3 {
+  font-size: 20px;
+  color: white;
+  margin: 5px 0;
+}
+.card h4 {
+  font-size: 14px;
+  color: white;
+  margin: 5px 0;
+}
+.card p {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+.card .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background: #5cc5cd;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.card .btn.message {
+  background: #009688;
+}
+.card .timer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+}
+.card .timer span {
+  font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-right: 20px;
+}
+.bottomsec {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 5px;
+  background-color: #828bb3;
+  padding: 0px 10px;
+}
+.bottomsec select {
+  height: auto;
+  min-height: 30px;
+  width: 100px;
+  margin-left: 15px;
+  border-radius: 6px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #555;
+  border-radius: 5px;
+}
+.pagination a.active {
+  background: orange;
+  color: #fff;
+}
+.pagination a:hover {
+  background: #ddd;
+}
+
+/* Navigation Arrows */
+.pagination a.arrow {
+  font-size: 18px;
+  padding: 8px 10px;
+}
+.coverbgimage {
+  background: #69c9d0;
+  color: white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardbtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
